@@ -7,7 +7,7 @@ $('#page_dashboard').live('pageshow',function(){
       type: 'post',
       dataType: 'json',
       error: function (XMLHttpRequest, textStatus, errorThrown) {
-        alert('page_dashboard - failed to system connect');
+        alert('ERROR: Unable to contact server.\n\nThe system is down.');
         console.log(JSON.stringify(XMLHttpRequest));
         console.log(JSON.stringify(textStatus));
         console.log(JSON.stringify(errorThrown));
